@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #242526;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Can be changed in the live sample */
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.logo {
+  height: 32px;
+}
