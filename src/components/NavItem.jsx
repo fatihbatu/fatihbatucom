@@ -4,7 +4,7 @@ import './navitem.css'
 const NavItem = (props) => {
   return (
     <li className='nav-item'>
-      <a href='#' className='nav-text' onClick={() => setOpen(!open)}>
+      <a href='#' className='nav-text' style={{opacity: `${props.opacity}`}}>
         {props.text}
       </a>
     </li>

@@ -1,0 +1,36 @@
+.projectcard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  gap: 26px;
+  background: #171717;
+  border-radius: 25px;
+}
+.card-title {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px 29px;
+  gap: 24px;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.card-image {
+  background: url(../assets/project-image1.png);
+  background-size: cover;
+}
+.card-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 10px;
+  gap: 24px;
+}

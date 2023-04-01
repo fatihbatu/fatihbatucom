@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background: #151616;
   font-family: roboto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,13 +10,8 @@ code {
 }
 
 :root {
-  --bg: #242526;
-  --bg-accent: #484a4d;
-  --text-color: #01040e;
-  --nav-size: 60px;
-  --border: 1px solid #474a4d;
-  --border-radius: 8px;
-  --speed: 500ms;
+  --max-width: 1100px;
+  --text-color: #fff;
 }
 
 ul {

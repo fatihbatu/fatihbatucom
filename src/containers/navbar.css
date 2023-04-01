@@ -1,14 +1,20 @@
 .navbar {
-  background-color: #242526;
   width: 100%;
   display: flex;
-  justify-content: space-between; /* Can be changed in the live sample */
+}
+
+.navbar-logo {
+  padding: 0.25rem;
+  margin-right: auto;
+}
+
+.navbar-logo img {
+  height: 32px;
 }
 
 .navbar-nav {
+  padding: 0.5rem;
   display: flex;
-}
-
-.logo {
-  height: 32px;
+  align-items: center;
+  margin-left: auto;
 }
