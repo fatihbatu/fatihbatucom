@@ -1,0 +1,89 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  margin: auto;
+}
+
+.contact-container {
+  flex: 1;
+}
+
+.contact-container > form {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1rem + 1vw);
+  margin: auto;
+  height: 100%;
+  justify-content: center;
+}
+
+.contact-container > form > * {
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.contact-container input,
+textarea {
+}
+
+.contact-container > form > input {
+  height: 2rem;
+  border-bottom: 1px solid rgb(24, 23, 24);
+}
+
+.contact-container > form > textarea {
+  height: 8rem;
+  border-bottom: 1px solid rgb(24, 23, 24);
+  resize: none;
+}
+
+.contact-container > form > ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(18, 16, 19, 1);
+  opacity: 1; /* Firefox */
+}
+
+.contact-container > form > button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  background-color: black;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.send-button p {
+  flex: 1;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.send-button img {
+  height: 2rem;
+  margin-right: 2rem;
+}
+/* .button:hover {
+  filter: brightness(1.5);
+} */
+
+.contact-container > p {
+  font-size: 1rem;
+}
+
+.contact-container > img {
+  width: 5rem;
+}

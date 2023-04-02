@@ -1,11 +1,23 @@
 import React from 'react'
-import Button from '../components/Button'
-import Card from '../components/Card'
 import './main.css'
-import LinkButton from '../components/LinkButton'
-import ProjectCard from '../components/ProjectCard'
 
-import {Linkedin, Github, Javascript, ReactJS, NodeJS, ExpressJS, MongoDB, Figma} from '../assets'
+import Footer from './Footer'
+import {Button, Card, ContactUs, LinkButton, NavItem, ProjectCard} from '../components'
+
+import {
+  Linkedin,
+  Github,
+  Javascript,
+  ReactJS,
+  NodeJS,
+  ExpressJS,
+  MongoDB,
+  Figma,
+  ProjectOne,
+  ProjectTwo,
+  ProjectThree,
+  ProjectFour,
+} from '../assets'
 
 const Main = () => {
   return (
@@ -22,10 +34,10 @@ const Main = () => {
               <p>Contact Me</p>
             </Button>
             <div className='link-group'>
-              <LinkButton>
+              <LinkButton href='https://linkedin.com/in/fatihbatu'>
                 <img src={Linkedin} alt='linkedin' />
               </LinkButton>
-              <LinkButton>
+              <LinkButton href='https://github.com/fatihbatu'>
                 <img src={Github} alt='github' />
               </LinkButton>
             </div>
@@ -56,13 +68,38 @@ const Main = () => {
         </Card>
       </section>
       <section className='projects'>
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard image={ProjectOne} />
+        <ProjectCard image={ProjectTwo} />
       </section>
       <section className='projects'>
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard image={ProjectThree} />
+        <ProjectCard image={ProjectFour} />
       </section>
+      <footer id='contact' className='slider-thumb'>
+        <Footer>
+          <div className='footer-area'>
+            <h3>Want to work together?</h3>
+            <p>Feel free to reach out for collaborations or just a friendly hello</p>
+            <div className='card-bottom'>
+              {/* <Button mailto='mailto:no-reply@example.com' bg='black' color='white'>
+                <p>Contact Me</p>
+              </Button> */}
+              <Button bg='white' color='black'>
+                <p>My Resume</p>
+              </Button>
+              <div className='link-group'>
+                <LinkButton href='https://linkedin.com/in/fatihbatu'>
+                  <img src={Linkedin} alt='linkedin' />
+                </LinkButton>
+                <LinkButton href='https://github.com/fatihbatu'>
+                  <img src={Github} alt='github' />
+                </LinkButton>
+              </div>
+            </div>
+          </div>
+          <ContactUs />
+        </Footer>
+      </footer>
     </div>
   )
 }

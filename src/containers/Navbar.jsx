@@ -2,7 +2,7 @@ import React from 'react'
 import './navbar.css'
 
 import Logo from '../assets/logo.svg'
-import NavItem from '../components/NavItem'
+import {NavItem} from '../components'
 
 const Navbar = (props) => {
   return (
