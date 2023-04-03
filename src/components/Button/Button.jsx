@@ -1,14 +1,21 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './button.css'
 
 const Button = (props) => {
-  const onClickMailtoHandler = (e) => {
-    window.location.href = props.mailto
-    e.preventDefault()
+  const [anchorTarget, setAnchorTarget] = useState(null)
+
+  useEffect(() => {
+    setAnchorTarget(document.getElementById(props.itemName))
+  }, [props.itemName])
+
+  const handleClick = (event) => {
+    event.preventDefault()
+    anchorTarget.scrollIntoView({behavior: 'smooth', block: 'start'})
   }
   return (
     <button
-      onClick={onClickMailtoHandler}
+      href={`#${props.itemName}`}
+      onClick={handleClick}
       className='button'
       style={{backgroundColor: props.bg, color: props.color}}
     >

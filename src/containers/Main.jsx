@@ -3,7 +3,7 @@ import './main.css'
 
 import Footer from './Footer'
 import {Button, Card, ContactUs, LinkButton, NavItem, ProjectCard} from '../components'
-
+import {categories} from '../utils/data'
 import {
   Linkedin,
   Github,
@@ -30,7 +30,7 @@ const Main = () => {
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
           </p>
           <div className='card-bottom'>
-            <Button bg='black' color='white'>
+            <Button bg='black' color='white' itemName='contact'>
               <p>Contact Me</p>
             </Button>
             <div className='link-group'>
@@ -68,8 +68,16 @@ const Main = () => {
         </Card>
       </section>
       <section id='projects' className='projects'>
-        <ProjectCard image={ProjectOne} />
-        <ProjectCard image={ProjectTwo} />
+        {categories.slice(0, categories.length).map((category) => (
+          <ProjectCard
+            key={category.name}
+            title={category.title}
+            description={category.description}
+            github={category.github}
+            demo={category.demo}
+            image={category.image}
+          />
+        ))}
       </section>
       <section className='projects'>
         <ProjectCard image={ProjectThree} />
