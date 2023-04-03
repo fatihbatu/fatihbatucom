@@ -1,36 +1,23 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './main.css'
 
 import Footer from './Footer'
 import {Button, Card, ContactUs, LinkButton, NavItem, ProjectCard} from '../components'
 import {categories} from '../utils/data'
-import {
-  Linkedin,
-  Github,
-  Javascript,
-  ReactJS,
-  NodeJS,
-  ExpressJS,
-  MongoDB,
-  Figma,
-  ProjectOne,
-  ProjectTwo,
-  ProjectThree,
-  ProjectFour,
-} from '../assets'
+import {Linkedin, Github, Javascript, ReactJS, NodeJS, ExpressJS, MongoDB, Figma} from '../assets'
 
 const Main = () => {
   return (
     <div className='main'>
       <section className='information'>
         <Card class='gradient-background1'>
-          <h3>Hello, I’m Fatih BATU,a Full-Stack Developer</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-          </p>
+          <h3>
+            Hello, I’m Fatih BATU,
+            <br />a Full-Stack Developer
+          </h3>
+          <p>Software Developer Focusing on Web Applications</p>
           <div className='card-bottom'>
-            <Button bg='black' color='white' itemName='contact'>
+            <Button bg='black' color='white' itemName='contact' click='handleClick'>
               <p>Contact Me</p>
             </Button>
             <div className='link-group'>
@@ -79,20 +66,13 @@ const Main = () => {
           />
         ))}
       </section>
-      <section className='projects'>
-        <ProjectCard image={ProjectThree} />
-        <ProjectCard image={ProjectFour} />
-      </section>
       <footer id='contact' className='slider-thumb'>
         <Footer>
           <div className='footer-area'>
             <h3>Want to work together?</h3>
             <p>Feel free to reach out for collaborations or just a friendly hello</p>
             <div className='card-bottom'>
-              {/* <Button mailto='mailto:no-reply@example.com' bg='black' color='white'>
-                <p>Contact Me</p>
-              </Button> */}
-              <Button bg='white' color='black'>
+              <Button bg='white' color='black' click='openTab'>
                 <p>My Resume</p>
               </Button>
               <div className='link-group'>

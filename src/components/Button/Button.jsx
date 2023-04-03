@@ -12,10 +12,14 @@ const Button = (props) => {
     event.preventDefault()
     anchorTarget.scrollIntoView({behavior: 'smooth', block: 'start'})
   }
+
+  function openTab() {
+    window.open('/resume.pdf', '_blank')
+  }
   return (
     <button
       href={`#${props.itemName}`}
-      onClick={handleClick}
+      onClick={props.click === 'handleClick' ? handleClick : openTab}
       className='button'
       style={{backgroundColor: props.bg, color: props.color}}
     >
