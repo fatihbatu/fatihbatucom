@@ -25,3 +25,6 @@ dist-ssr
 
 # Custom rules
 .env
+.env.example
+.env.local
+.env.staging
