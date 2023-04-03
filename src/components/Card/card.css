@@ -6,6 +6,8 @@
   padding: 2.5rem;
   border-radius: 24px;
   transition: all 0.3s ease-in-out;
+  min-width: 300px;
+  min-height: 300px;
 }
 .gradient-background1 {
   background: linear-gradient(41deg, #76bd21, #2afada, #efe8e6, #d76b6f);

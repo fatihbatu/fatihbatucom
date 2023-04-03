@@ -52,7 +52,6 @@ const ContactUs = () => {
       )}
       {mailSended === 'InProgress' && (
         <div className='form-container'>
-          {' '}
           <ClockLoader size={100} />
         </div>
       )}

@@ -67,7 +67,7 @@ const Main = () => {
           </div>
         </Card>
       </section>
-      <section className='projects'>
+      <section id='projects' className='projects'>
         <ProjectCard image={ProjectOne} />
         <ProjectCard image={ProjectTwo} />
       </section>

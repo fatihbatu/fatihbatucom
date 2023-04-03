@@ -11,9 +11,9 @@ const Navbar = (props) => {
         <img src={Logo} alt='logo' />
       </a>
       <ul className='navbar-nav'>
-        <NavItem text='Home' bold />
-        <NavItem text='Projects' opacity='75%' />
-        <NavItem text='Contact' opacity='75%' />
+        <NavItem text='Home' href='#' bold />
+        <NavItem text='Projects' href='#projects' opacity='75%' />
+        <NavItem text='Contact' href='#contact' opacity='75%' />
       </ul>
     </nav>
   )
