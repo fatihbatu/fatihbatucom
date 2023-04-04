@@ -1,27 +1,14 @@
-import Linkedin from './icons/linkedin.svg'
-import Github from './icons/github.svg'
-import Javascript from './icons/javascript2.svg'
-import ReactJS from './icons/react.svg'
-import NodeJS from './icons/nodejs2.svg'
-import ExpressJS from './icons/express2.svg'
-import MongoDB from './icons/mongodb.svg'
-import Figma from './icons/figma2.svg'
+// Icon Gorup 2
+import Javascript from './icons/javascript.webp'
+import ReactJS from './icons/react.webp'
+import NodeJS from './icons/nodejs.webp'
+import ExpressJS from './icons/express.webp'
+import MongoDB from './icons/mongodb.webp'
+import Figma from './icons/figma.webp'
+// Project Images
 import ProjectOne from './project1.webp'
 import ProjectTwo from './project2.webp'
-import RightArrow from './icons/rightArrow.svg'
-import Checkmark from './icons/checkmark.svg'
+// Logo
+import Logo from './logo.webp'
 
-export {
-  Linkedin,
-  Github,
-  Javascript,
-  ReactJS,
-  NodeJS,
-  ExpressJS,
-  MongoDB,
-  Figma,
-  ProjectOne,
-  ProjectTwo,
-  RightArrow,
-  Checkmark,
-}
+export {Javascript, ReactJS, NodeJS, ExpressJS, MongoDB, Figma, ProjectOne, ProjectTwo, Logo}

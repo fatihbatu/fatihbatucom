@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import './main.css'
+import {FaLinkedinIn, FaGithub} from 'react-icons/fa'
 
 import Footer from './Footer'
 import {Button, Card, ContactUs, LinkButton, NavItem, ProjectCard} from '../components'
 import {categories} from '../utils/data'
-import {Linkedin, Github, Javascript, ReactJS, NodeJS, ExpressJS, MongoDB, Figma} from '../assets'
+import {Javascript, ReactJS, NodeJS, ExpressJS, MongoDB, Figma} from '../assets'
 
 const Main = () => {
   return (
@@ -22,10 +23,10 @@ const Main = () => {
             </Button>
             <div className='link-group'>
               <LinkButton href='https://linkedin.com/in/fatihbatu'>
-                <img src={Linkedin} alt='linkedin' />
+                <FaLinkedinIn color='black' size={32} />
               </LinkButton>
               <LinkButton href='https://github.com/fatihbatu'>
-                <img src={Github} alt='github' />
+                <FaGithub color='black' size={32} />
               </LinkButton>
             </div>
           </div>
@@ -34,22 +35,22 @@ const Main = () => {
           <h2>There are Languages, Frameworks, Libraries and Tools that I use these days.</h2>
           <div className='tools-area'>
             <LinkButton class='tool'>
-              <img src={Javascript} alt='javascript' />
+              <img src={Javascript} alt='javascript' width={64} height={64} />
             </LinkButton>
             <LinkButton class='tool'>
-              <img src={ReactJS} alt='reactjs' />
+              <img src={ReactJS} alt='reactjs' width={64} height={64} />
             </LinkButton>
             <LinkButton class='tool'>
-              <img src={NodeJS} alt='nodejs' />
+              <img src={NodeJS} alt='nodejs' width={64} height={64} />
             </LinkButton>
             <LinkButton class='tool'>
-              <img src={ExpressJS} alt='github' />
+              <img src={ExpressJS} alt='github' width={64} height={64} />
             </LinkButton>
             <LinkButton class='tool'>
-              <img src={MongoDB} alt='mongodb' />
+              <img src={MongoDB} alt='mongodb' width={64} height={64} />
             </LinkButton>
             <LinkButton class='tool'>
-              <img src={Figma} alt='figma' />
+              <img src={Figma} alt='figma' width={64} height={64} />
             </LinkButton>
           </div>
         </Card>
@@ -77,10 +78,10 @@ const Main = () => {
               </Button>
               <div className='link-group'>
                 <LinkButton href='https://linkedin.com/in/fatihbatu'>
-                  <img src={Linkedin} alt='linkedin' />
+                  <FaLinkedinIn color='black' size={32} />
                 </LinkButton>
                 <LinkButton href='https://github.com/fatihbatu'>
-                  <img src={Github} alt='github' />
+                  <FaGithub color='black' size={32} />
                 </LinkButton>
               </div>
             </div>

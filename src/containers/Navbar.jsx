@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './navbar.css'
 
-import Logo from '../assets/logo.svg'
+import {Logo} from '../assets'
 import {NavItem} from '../components'
 
 const Navbar = (props) => {

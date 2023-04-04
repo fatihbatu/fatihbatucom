@@ -1,11 +1,13 @@
 import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser'
 import ClockLoader from 'react-spinners/ClockLoader'
-import {Checkmark} from '../../assets'
+// import {Checkmark} from '../../assets'
+import {MdArrowForwardIos} from 'react-icons/md'
+import {FcCheckmark} from 'react-icons/fc'
 
 import './contactus.css'
 
-import {RightArrow} from '../../assets'
+// import {RightArrow} from '../../assets'
 
 const ContactUs = () => {
   const [mailSended, setMailSended] = useState('Available')
@@ -45,7 +47,7 @@ const ContactUs = () => {
             <textarea placeholder='Message' name='message' required />
             <button className='send-button' type='submit'>
               <p>Send</p>
-              <img src={RightArrow} alt='icon' />
+              <MdArrowForwardIos />
             </button>
           </form>
         </div>
@@ -57,7 +59,7 @@ const ContactUs = () => {
       )}
       {mailSended === 'Success' && (
         <div className='form-container'>
-          <img src={Checkmark} alt='icon' />
+          <FcCheckmark />
           <p>Your Message Successfully Sended</p>
         </div>
       )}
