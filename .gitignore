@@ -23,8 +23,12 @@ dist-ssr
 *.sln
 *.sw?
 
-# Custom rules
+# ENV rules
 .env
 .env.example
 .env.local
 .env.staging
+
+# Custom rules
+.prettierignore
+.prettierrc
