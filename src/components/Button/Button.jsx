@@ -14,7 +14,7 @@ const Button = (props) => {
   }
 
   function openTab() {
-    window.open('/resume.pdf', '_blank')
+    window.open('/my-assets/resume.pdf', '_blank')
   }
   return (
     <button
